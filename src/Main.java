@@ -17,8 +17,8 @@ public class Main {
             System.out.println(i);
         }
         System.out.println("Задача №5");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i + " год является високосным");
+        for (int year = 1904; year <= 2096; year = year + 4) {
+            System.out.println(year + " год является високосным");
         }
         System.out.println("Задача №6");
         for (int i = 7; i <= 98; i = i + 7) {
@@ -31,17 +31,18 @@ public class Main {
         System.out.println("Задача №8");
         int cash = 29000;
         int sum = 0;
-        for (int i = 0; i <= 12; i++) {
+        for (int month = 1; month <= 12; month++) {
             sum = sum + cash;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + sum);
+            System.out.println("Месяц " + month + " сумма накоплений равна " + sum);
         }
         System.out.println("Задача №9");
-        int cash1 = 29000;
-        int sum1 = 0;
-        for (int i = 0; i <= 12; i++) {
-            sum1 = sum1 + sum1 / 100 * 12;
-            sum1 = sum1 + cash1;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + sum1);
+        cash = 29000;
+        sum = 0;
+        int percent = sum / 100 * 12;
+        for (int month = 1; month <= 12; month++) {
+            percent = sum + sum / 100 * 12;
+            sum = percent + cash;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + sum);
         }
         System.out.println("Задача №10");
         int a = 2;
